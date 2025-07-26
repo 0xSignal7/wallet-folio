@@ -1,16 +1,11 @@
-# This is a sample Python script.
+# main.py (ou app/main.py si tu préfères)
+import uvicorn
 
-# Press Ctrl+F5 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+def main():
+    uvicorn.run("app.api:app", host="127.0.0.1", port=8001, reload=True)
 
+if __name__ == "__main__":
+    main()
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press F9 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+#0x0058faedf76999c0a4a1dcc27dc78e61dd5cc0b9
+#http://127.0.0.1:8001/wallet/0x0058faedf76999c0a4a1dcc27dc78e61dd5cc0b9
